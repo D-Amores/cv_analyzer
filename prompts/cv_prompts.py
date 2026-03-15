@@ -31,10 +31,10 @@ ANALYSIS_PROMPT = HumanMessagePromptTemplate.from_template(
     Proporciona un análisis detallado, objetivo y profesional.
 
 **DESCRIPCIÓN DEL PUESTO A CUBRIR:**
-{descripcion_puesto}
+{job_description}
 
 **CURRÍCULUM VITAE DEL CANDIDATO:**
-{texto_cv}
+{candidate_cv}
 
 **INSTRUCCIONES ESPECÍFICAS:**
 1. Extrae información clave del candidato (nombre, experiencia, educación)
