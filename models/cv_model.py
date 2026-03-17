@@ -1,3 +1,4 @@
+from typing import List
 from pydantic import BaseModel, Field
 
 
@@ -19,7 +20,7 @@ class AnalysisCV(BaseModel):
     relevant_experience: str = Field(
         description="relevant experience of the candidate of the job description"
     )
-    strength: str = Field(
+    strength: List[str] = Field(
         description="3-5 bullet points of the candidate's strengths related to the job description"
     )
     area_to_improve: list[str] = Field(
